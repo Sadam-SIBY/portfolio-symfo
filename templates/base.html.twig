@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+     
+        <title>{% block title %}Sadam-Développeur PHP/Symfony{% endblock %}</title>
+        <meta
+        name="description"
+        content="Dévéloppeur Back-end spécilisé en PHP et Symfony apte à rélever des défis"
+        />
+        <meta name="autheur" content="Sadam SIBY" />
+         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        
+        {% block stylesheets %}
+           <link rel="stylesheet" href="css/style.css" />
+        {% endblock %}
+
+        {% block javascripts %}
+
+        {% endblock %}
+    </head>
+
+    <body>
+     <header class="header">
+      <div class="header__content">
+        <a href="./" class="">
+          <div class="header__logo-container">
+            <div class="header__logo-img-cont">
+              <img src="{{asset('images/photo.jpg')}}" alt="Sadam SIBY Logo Image" class="header__logo-img"/>
+            </div>
+              <span class="header__logo-sub">Sadam SIBY </span>
+          </div>
+        </a>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./" class="header__link"> Accueil</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#a-propos" class="header__link">À propos de moi </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#projets" class="header__link"> Projets </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#contact" class="header__link"> Me contacter </a>
+            </li>
+            <div class="header__link">
+              <img src="assets/images/moon.png" id="icon" alt="">
+            </div>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./"> Accueil </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#a-propos"> À propos de moi </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#projets"> Projets </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#contact"> Me contacter </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    {% block body %}{% endblock %}
+
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/sadam-siby/"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/Sadam-SIBY"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+             
+         
+
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h2 class="heading heading-sm text-lt">Sadam SIBY</h2>
+            <p class="main-footer__short-desc">
+              sibysadam@gmail.com
+            </p>
+            <p class="main-footer__short-desc">
+              06-52-55-06-91
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          &copy; Copyright
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          . Made by Sadam SIBY
+          
+        </div>
+      </div>
+    </footer>
+    
+    </body>
+</html>

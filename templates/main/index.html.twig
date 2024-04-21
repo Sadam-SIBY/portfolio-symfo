@@ -1,0 +1,249 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sadam-Développeur PHP/Symfony{% endblock %}
+
+{% block body %}
+
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Bonjour, je suis Sadam SIBY</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            Développeur <strong>Back-end</strong> spécialisé <strong>Symfony</strong>.
+          </p>           
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#projets" class="btn btn--bg">Projets</a>
+        </div>
+      </div>
+      
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+
+    <section id="a-propos" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">A propos de moi</span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Me connaître plus</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Issu d'une reconversion professionnelle, je progresse dans le <strong>developpement back-end </strong>spécialité <strong>Symfony</strong>.               
+                Je suis dans une démarche d'apprentissage constant pour apprendre de nouveaux languages et acquérir de la 
+                rigueur et de la méthode de travail.
+              </p>
+              <p class="about__content-details-para">
+                Je suis ouvert aux opportunités d’emploi où je pourrais contribuer, apprendre et grandir.
+                Si vous pensez que je pourrais apporter un plus à vos besoins, alors n’hésitez pas à <strong>me contacter</strong>.
+              </p>
+         
+            </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Me contacter</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">Mes compétences</h3>
+            <div class="skills">
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">PHP</div>
+              <div class="skills__skill">Symfony</div>
+              <div class="skills__skill">React</div>
+              <div class="skills__skill">Laravel</div>
+              <div class="skills__skill">Wordpress</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">Github</div>
+              <div class="skills__skill">Responsive Design</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projets" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projets</span>
+          <span class="heading-sec__sub">
+            Les différents projets sur lesquels j'ai travaillé : 
+          </span>
+        </h2>
+        <div class="projects__content">
+
+             <div class="projects__row  ">
+                <div class="projects__row-img-cont ">
+                    <img
+                    src="{{asset('images/oboulot.png')}}"
+                    alt="Software Screenshot" 
+                    class="projects__row-img  "
+                    loading="lazy"
+                    /> 
+                </div> 
+                <div class="projects__row-content">
+                    <h3 class="projects__row-content-title">Legaloa</h3>
+                    <p class="projects__row-content-desc">
+                        Plateforme de recherche juridique permettant aux juristes de retrouver facilement n'importe quel article de Loi et de décisions de justice via un moteur de recherche par mot clé ("Projet en cours de réalisation...").
+                    </p>
+                    <a class='btn btn--med btn--theme dynamicBgClr' href='#' target='_blank'> Lien vers le projet</a>
+                </div>
+            </div>
+
+            <div class="projects__row  ">
+                <div class="projects__row-img-cont ">
+                    {# <div class="projects__row-img "> #}
+            
+                    <img
+                    src="{{asset('images/oboulot.png')}}"
+                    alt="Software Screenshot" 
+                    class="projects__row-img  "
+                    loading="lazy"
+                    /> 
+                </div> 
+                <div class="projects__row-content">
+                    <h3 class="projects__row-content-title">O'Boulot</h3>
+                    <p class="projects__row-content-desc">
+                        O'Boulot est un projet de type éducatif permettant à des enseignants de proposer des exercices et corrigés à des élèves de sa classe.
+                    Cette application a été pensés et réalisés en équipe dans le cadre de ma formation auprès de l'école O'Clock.
+                    </p>
+                    {# <div class="access-project"> #}
+                        {# <button class="view" onclick="imagePop(id);"> 
+                        <i class="fa-solid fa-eye  " id="oboulot" ></i>
+                        </button> #}
+                        <a class='btn btn--med btn--theme dynamicBgClr' href='#' target='_blank'> Lien vers le projet</a>
+                    {# </div> #}
+                </div>
+            </div>
+
+            <div class="projects__row  ">
+                <div class="projects__row-img-cont ">            
+                    <img
+                    src="{{asset('images/AlloFlixAccueil.png')}}"
+                    alt="Software Screenshot" 
+                    class="projects__row-img  "
+                    loading="lazy"
+                    /> 
+                </div> 
+                <div class="projects__row-content">
+                    <h3 class="projects__row-content-title">AlloFlix</h3>
+                    <p class="projects__row-content-desc">
+                         Site qui répertorie les nouveautés en termes de films et séries. Les films et séries sont classés par genre et permet 
+                    à l'utilisateur de rajouter les films et séries qui l'intéresse dans sa liste de favoris, de leur donner une note et 
+                    d'émettre également des critiques sur ces films et séries. Le site a été avec le framework Symfony.
+                    </p>
+                    <a class='btn btn--med btn--theme dynamicBgClr' href='#' target='_blank'> Lien vers le projet</a>
+                </div>
+            </div>
+
+            <div class="projects__row  ">
+                <div class="projects__row-img-cont ">            
+                    <img
+                    src="{{asset('images/trip.png')}}"
+                    alt="Software Screenshot" 
+                    class="projects__row-img  "
+                    loading="lazy"
+                    /> 
+                </div> 
+                <div class="projects__row-content">
+                    <h3 class="projects__row-content-title">Trip Odvisor</h3>
+                    <p class="projects__row-content-desc">
+                         Projet de conseils touristiques pour aider les gens à organiser leurs voyages (des avis, des guides, des bons plans sur 
+                    les destinations les plus recherchées, les restaurants les plus fins, les hôtels les plus luxueux, etc.)
+                    Projet réalisé dans le cadre de la formation chez O'Clock.
+                    </p>
+                    <a class='btn btn--med btn--theme dynamicBgClr' href='#' target='_blank'> Lien vers le projet</a>
+                </div>
+            </div>
+
+            <div class="projects__row  ">
+                <div class="projects__row-img-cont ">
+                    {# <div class="projects__row-img "> #}
+            
+                    <img
+                    src="{{asset('images/oshop.png')}}"
+                    alt="Software Screenshot" 
+                    class="projects__row-img  "
+                    loading="lazy"
+                    /> 
+                </div> 
+                <div class="projects__row-content">
+                    <h3 class="projects__row-content-title">O'Shop</h3>
+                    <p class="projects__row-content-desc">
+                        Site e-commerce,  en l'occurence une boutique en ligne de chaussures.
+                    Le site a été développé en respectant la methode agile Scrum (développement itératif par Sprints).
+                    </p>
+                    <a class='btn btn--med btn--theme dynamicBgClr' href='#' target='_blank'> Lien vers le projet</a>
+                </div>
+            </div>
+
+         </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Me contacter</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            N'hésitez pas à me contacter ! Je serai ravi de vous repondre dans le plus bref délai.
+          </span>
+        </h2>
+        <div class="contact__form-container">
+
+          <form action='https://formsubmit.co/sibysadam@gmail.com' class='contact__form' method='post'>
+            <input type='hidden' name='form-name' value='form 1' />
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Nom & Prénom</label>
+              <input
+                required
+                placeholder="Entrer votre nom & prénom"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">E-mail</label>
+              <input
+                required
+                placeholder="Entrer votre E-mail"
+                type="email"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Votre message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://localhost/Job/sadam-siby/">
+            <button type="submit" class="btn btn--theme contact__btn">
+              Envoyer
+            </button>
+          </form>
+          
+        </div>
+      </div>
+    </section>
+
+   
+
+ 
+{% endblock %}
