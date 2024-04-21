@@ -9,14 +9,18 @@
         content="Dévéloppeur Back-end spécilisé en PHP et Symfony apte à rélever des défis"
         />
         <meta name="autheur" content="Sadam SIBY" />
+          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
          <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
         
         {% block stylesheets %}
            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         {% endblock %}
 
         {% block javascripts %}
-
+ <script src= "{{asset('js/App.js')}}" defer> </script>
+  <script src= "{{asset('js/theme.js')}}" defer> </script>
         {% endblock %}
     </head>
 
@@ -46,7 +50,7 @@
               <a href="./#contact" class="header__link"> Me contacter </a>
             </li>
             <div class="header__link">
-              <img src="assets/images/moon.png" id="icon" alt="">
+              <img src="{{asset('images/moon.png')}}" id="icon" alt="">
             </div>
           </ul>
           <div class="header__main-ham-menu-cont">
@@ -129,5 +133,7 @@
       </div>
     </footer>
     
+
+
     </body>
 </html>

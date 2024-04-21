@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sadam-Développeur PHP/Symfony{% endblock %}
+
+{% block body %}
+
+   <section id="oboulot" class="about sec-pad">
+          <div class="main-container oboulot-content">
+            <h2 class="heading heading-sec heading-sec__mb-med">
+              <span class="heading-sec__main oboulot-content">O'Boulot</span>
+            </h2>
+            <div class="about__content">
+              <div class="about__content-main">
+                <div class="about__content-details">
+                  <p class="about__content-details-para oboulot-content">
+                    O'Boulot est un projet de type éducatif permettant à des enseignants de proposer des exercices et corrigés à des élèves de sa classe.
+                    Cette application a été pensés et réalisés en équipe dans le cadre de ma formation auprès de l'école O'Clock.
+                  </p>
+            
+                </div>
+    
+              </div>
+              <div class="about__content-skills">
+                <h3 class="about__content-title">Technologies</h3>
+                <div class="skills">
+                  <div class="skills__skill">HTML</div>
+                  <div class="skills__skill">CSS</div>
+                  <div class="skills__skill">Symfony</div>
+                  <div class="skills__skill">React</div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="container ">
+        <div class="content">     
+          <section class="slider">
+            <button class="btn slider__btn" type="button" aria-label="Précédent">&lt;</button>
+            <button class="btn slider__btn button" type="button" aria-label="Suivant">&gt;</button>
+          </section>
+        </div>
+      </section>
+  
+
+      <div class="projects__row  ">
+        <div class="projects__row-img-cont ">
+          <div class="projects__row-img " id="oboulot-image" style="background-image:url(assets/images/oboulot.png);">
+          </div> 
+        
+        </div>
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">O'Boulot</h3>
+          <p class="projects__row-content-desc">
+            O'Boulot est un projet de type éducatif permettant à des enseignants de proposer des exercices et corrigés à des élèves de sa classe.
+          Cette application a été pensés et réalisés en équipe dans le cadre de ma formation auprès de l'école O'Clock.
+          </p>
+          
+          <div class="access-project">
+            <button class="view" onclick="imagePop(id);"> 
+              <i class="fa-solid fa-eye  " id="oboulot" ></i>
+            </button>
+            <a class='btn btn--med btn--theme dynamicBgClr' href='#' target='_blank'> Lien vers le projet</a>
+          </div>
+        </div>
+      </div>
+
+      <section class="imagePop" id="imagePopId">
+        
+          <div class="click1" onclick="imageMoveLeft();"> <i class="fas fa-arrow-alt-circle-left fa-3x"></i></div>
+        <div class="click2" onclick="imageMoveRight();"> <i class="fas fa-arrow-alt-circle-right fa-3x"></i> </div>
+        <div class="close" onclick="imagePopNone();"> <i class="fa-solid fa-circle-xmark"></i> </div> 
+        <section class="imagePopUnder" onclick="imagePopNone();"></section>
+        <section   class="imageContain" id="imageContainId" onclick="imageChange(id);"style="background-image: url(&quot;assets/images/oboulot.png&quot;); width: 80%; height: 70%; ">
+        </section>
+    </section>
+
+ 
+{% endblock %}

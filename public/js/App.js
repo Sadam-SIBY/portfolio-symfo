@@ -1,0 +1,11 @@
+
+const App = {
+    init: function () {
+        slider.init();
+        theme.init();
+        
+    }
+}
+
+
+document.addEventListener('DOMContentLoaded', App.init);
