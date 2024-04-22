@@ -1088,6 +1088,17 @@ textarea {
     margin-bottom: 2rem;
 
   }
+
+.slider2 {
+    position: relative;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+
+  }
   
   .slider__img {
     position: absolute;

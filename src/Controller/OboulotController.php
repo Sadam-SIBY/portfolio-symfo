@@ -8,9 +8,9 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class OboulotController extends AbstractController
 {
-    #[Route('/oboulot', name: 'app_oboulot')]
+    #[Route('/oboulot', name: 'project_oboulot')]
     public function oboulot(): Response
     {
-        return $this->render('oboulot/index.html.twig');
+        return $this->render('projects/oboulot.html.twig');
     }
 }

@@ -79,7 +79,7 @@
              <div class="projects__row  ">
                 <div class="projects__row-img-cont ">
                     <img
-                    src="{{asset('images/Legaloa.png')}}"
+                    src="{{asset('images/Legaloa.png')}}"  
                     alt="Software Screenshot" 
                     class="projects__row-img  "
                     loading="lazy"
@@ -90,7 +90,7 @@
                     <p class="projects__row-content-desc">
                         Plateforme de recherche juridique permettant aux juristes de retrouver facilement n'importe quel article de Loi et de décisions de justice via un moteur de recherche par mot clé ("Projet en cours de réalisation...").
                     </p>
-                    <a class='btn btn--med btn--theme dynamicBgClr' href='#' target='_blank'> Lien vers le projet</a>
+                    <a class='btn btn--med btn--theme dynamicBgClr' href='{{ path('project_legaloa')}}' target='_blank'> Lien vers le projet</a>
                 </div>
             </div>
 
@@ -111,12 +111,7 @@
                         O'Boulot est un projet de type éducatif permettant à des enseignants de proposer des exercices et corrigés à des élèves de sa classe.
                     Cette application a été pensés et réalisés en équipe dans le cadre de ma formation auprès de l'école O'Clock.
                     </p>
-                    {# <div class="access-project"> #}
-                        {# <button class="view" onclick="imagePop(id);"> 
-                        <i class="fa-solid fa-eye  " id="oboulot" ></i>
-                        </button> #}
-                        <a class='btn btn--med btn--theme dynamicBgClr' href='#' target='_blank'> Lien vers le projet</a>
-                    {# </div> #}
+                    <a class='btn btn--med btn--theme dynamicBgClr' href='{{ path('project_oboulot')}}' target='_blank'> Lien vers le projet</a>
                 </div>
             </div>
 
