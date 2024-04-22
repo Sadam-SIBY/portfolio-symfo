@@ -1089,17 +1089,7 @@ textarea {
 
   }
 
-.slider2 {
-    position: relative;
-    height: 40rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 2rem;
 
-  }
-  
   .slider__img {
     position: absolute;
     top: 0;
@@ -1110,18 +1100,19 @@ textarea {
     opacity: 0;
     transition: opacity .3s;
   }
-  
+
+ 
+
   .slider__img--current {
     opacity: 1;
     z-index: 1;
   }
-  
+
   .slider__btn {
     position: relative;
     z-index: 2;
     font-weight: bold;
   }
-
 
   
   /* slider nav */
@@ -1217,7 +1208,7 @@ textarea {
     width: 22px;
     cursor: pointer;
 }
-
+/* 
 .imagesContainer   {
 
 width: 60%;
@@ -1332,4 +1323,4 @@ margin-bottom: 4rem;
         .imageContain {
             top: -10%;
         }
-    }
+    } */

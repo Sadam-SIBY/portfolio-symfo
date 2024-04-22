@@ -1,6 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Sadam-Développeur PHP/Symfony{% endblock %}
+{% block javascripts %}
+  <script src= "{{asset('js/App.js')}}" defer> </script>
+  <script src= "{{asset('js/slider.js')}}" defer> </script>
+  <script src= "{{asset('js/theme.js')}}" defer> </script>
+{% endblock %}
 
 {% block body %}
 

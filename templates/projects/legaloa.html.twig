@@ -1,7 +1,10 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Sadam-Développeur PHP/Symfony{% endblock %}
-
+{% block javascripts %}
+  <script src= "{{asset('js/slider2.js')}}" defer> </script>
+  
+{% endblock %}
 {% block body %}
 
    <section id="oboulot" class="about sec-pad">
@@ -33,11 +36,16 @@
 
       <section class="container ">
         <div class="content">     
-          <section class="slider2">
+          <section class="slider">
             <button class="btn slider__btn" type="button" aria-label="Précédent">&lt;</button>
             <button class="btn slider__btn button" type="button" aria-label="Suivant">&gt;</button>
           </section>
         </div>
       </section>
+
+
+
+
+
  
 {% endblock %}
