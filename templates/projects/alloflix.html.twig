@@ -2,22 +2,22 @@
 
 {% block title %}Sadam-Développeur PHP/Symfony{% endblock %}
 {% block javascripts %}
-  <script src= "{{asset('js/slider2.js')}}" defer> </script>
-  
+  <script src= "{{asset('js/slider3.js')}}" defer> </script>
 {% endblock %}
-{% block body %}
 
+{% block body %}
    <section id="oboulot" class="about sec-pad">
           <div class="main-container oboulot-content">
             <h2 class="heading heading-sec heading-sec__mb-med">
-              <span class="heading-sec__main oboulot-content">Legaloa</span>
+              <span class="heading-sec__main oboulot-content">AlloFlix</span>
             </h2>
             <div class="about__content">
               <div class="about__content-main">
                 <div class="about__content-details">
                   <p class="about__content-details-para oboulot-content">
-                    Plateforme de recherche juridique permettant aux juristes de retrouver facilement n'importe quel article de Loi et de décisions de justice via un moteur de recherche par mot clé ("Projet en cours de réalisation...").
-                  </p>
+                        Site qui répertorie les nouveautés en termes de films et séries. Les films et séries sont classés par genre et permet 
+              à l'utilisateur de rajouter les films et séries qui l'intéresse dans sa liste de favoris, de leur donner une note et 
+              d'émettre également des critiques sur ces films et séries. Le site a été avec le framework Symfony.
             
                 </div>
     
@@ -32,20 +32,16 @@
               </div>
             </div>
           </div>
-  </section>
+      </section>
 
       <section class="container ">
-        <div class="content">   
+        <div class="content">     
           <section class="slider">
             <button class="btn slider__btn" type="button" aria-label="Précédent">&lt;</button>
             <button class="btn slider__btn button" type="button" aria-label="Suivant">&gt;</button>
           </section>
         </div>
       </section>
-
-
-
-
-
  
 {% endblock %}
+

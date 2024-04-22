@@ -28,7 +28,7 @@ const slider = {
             "addQuestion.png",
             "eleve.png",
             "reponse.png",
-            "correction.png"
+            "correction.png",
 
         ];
   

@@ -1,7 +1,9 @@
 
 const sliderImagesNames = [
-    "Legaloa.png",
-    "legaloa2.png",
+    "AlloFlixAccueil.png",
+    "AlloFlixShow.png",
+    "AlloFlixFavoris.png",
+    "AlloFlixAdd.png",
 ];
 
 const slider = document.querySelector('section.slider');

@@ -2,11 +2,13 @@
 :root{
     --primary-color: #edf2fc;
     --primary-secondary: #212121;
+    --primary-tertiary: #fff;
 }
 
 .dark-theme{
     --primary-color: #000106;
     --primary-secondary: #fff;
+    --primary-tertiary: #000106;
 }
 
 *,*::after,*::before {
@@ -230,7 +232,7 @@ textarea {
 }
 
 .sec-pad {
-    padding: 12rem 0;
+    padding: 5rem 0;
 
 }
 
@@ -277,21 +279,6 @@ textarea {
     }
 }
 
-/* .home-hero__socials {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #fff;
-    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
-    padding: .5rem
-} */
-
-/* @media only screen and (max-width: 56.25em) {
-    .home-hero__socials {
-        display:none
-    }
-} */
-
 .home-hero__mouse-scroll-cont {
     position: absolute;
     bottom: 3%;
@@ -305,9 +292,6 @@ textarea {
     }
 }
 
-/* .home-hero__social {
-    width: 5rem
-} */
 
 .home-hero__social-icon-link {
     width: 100%;
@@ -358,7 +342,6 @@ textarea {
 }
 
 .about {
-    /* background: #fafafa; */
     background: var(--primary-color);
     
 }
@@ -503,7 +486,7 @@ textarea {
 }
 
 .contact {
-        background: var(--primary-color);
+        background: var( --primary-tertiary);
     /* background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)); */
     background-size: cover;
     background-position: center
@@ -1092,7 +1075,7 @@ textarea {
 
   .slider__img {
     position: absolute;
-    top: 0;
+    /* top: 0; */
     left: 0;
     width: 100%;
     height: 100%;
@@ -1138,8 +1121,10 @@ textarea {
 
   .container {
     width: 100%;
+    /* width: 96%; */
     max-width: 100em;
     margin: 0 auto;
+    /* margin: 5rem auto; */
   }
 
   .content {
@@ -1154,6 +1139,7 @@ textarea {
   }
  .slider__img {
     max-width: 100%;
+    height: auto;
   }
 
   .slider__btn{
@@ -1208,119 +1194,3 @@ textarea {
     width: 22px;
     cursor: pointer;
 }
-/* 
-.imagesContainer   {
-
-width: 60%;
-margin-left: 4rem;
-display: grid;
-margin-bottom: 4rem;
-}
-    
-    
-    .imagePop{
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        top:0;
-        left: 0;
-        z-index: 200;
-        display: none;
-        
-    }
-    
-    .imagePopUnder{
-        position: absolute;
-        top:0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background:rgba(0, 0, 0, 0.9);
-        z-index: 12;
-    }
-    
-    .imagePopUnder:hover{
-        cursor:zoom-out;
-    }
-    
-    .imageContain{
-        position: relative;
-        top:  0;
-        left: -20%;
-        z-index: 12;
-        margin: 25vh 30%;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        cursor: pointer;
-    }
-    
-    @keyframes he{
-    
-        100%{
-            left:0;
-        }
-    }
-    
-    
-    .click1{
-        position: absolute;
-        z-index: 14;
-        top:50%;
-        left: 5%;
-        cursor: pointer;
-        color: #fff;
-    }
-    
-    .click1:hover{
-        color:  #666BF5;
-    }
-
-
-    .click2{
-        position: absolute;
-        z-index: 14;
-        top:50%;
-        right: 5%;
-        cursor: pointer;
-        color: #fff;
-    }
-
-    .click2:hover{
-        color:  #666BF5;
-    }
-    
-    .close{
-        position: absolute;
-        z-index: 14;
-        top:5%;
-        right: 5%;
-        cursor: pointer;
-        color: #ffffff;
-       font-size: 3rem;
-        margin-top: 7rem;
-    }
-
-    .close:hover{
-        color:  hsl(0, 92%, 52%);
-    }
-  
-
-    @media only screen and (max-width: 37.5em) {
-        .fa-3x {
-            font-size: 1em;
-        }
-        .click1{
-          
-            color: #fff;
-        }
-        
-        .click2{
-          
-            color: #fff;
-        }
-  
-        .imageContain {
-            top: -10%;
-        }
-    } */
