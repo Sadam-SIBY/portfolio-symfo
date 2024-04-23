@@ -1,7 +1,7 @@
 
 const sliderImagesNames = [
-    "oshop.png",
-    "oshopResponsive.png",
+    "oshop1.png",
+    "oshop2.png",
 ];
 
 const slider = document.querySelector('section.slider');

@@ -20,6 +20,7 @@
 
         {% block javascripts %}
         <script src= "{{asset('js/theme.js')}}" defer> </script>
+        <script src= "{{asset('js/index.js')}}" defer> </script>
         {% endblock %}
     </head>
 
@@ -54,6 +55,16 @@
           </ul>
           <div class="header__main-ham-menu-cont">
 
+             <img
+              src="{{asset('images/hamburger.png')}}"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="{{asset('images/close.png')}}"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
           </div>
         </div>
       </div>

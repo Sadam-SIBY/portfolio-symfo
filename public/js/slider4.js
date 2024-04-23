@@ -1,6 +1,6 @@
 
 const sliderImagesNames = [
-    "trip1.png",
+    "trip.png",
     "trip2.png",
     "trip3.png",
 ];

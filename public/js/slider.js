@@ -29,6 +29,8 @@ const slider = {
             "eleve.png",
             "reponse.png",
             "correction.png",
+            "oboulotBack.png",
+            "oboulotBack2.png",
 
         ];
   
