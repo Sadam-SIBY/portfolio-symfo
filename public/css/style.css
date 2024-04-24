@@ -183,11 +183,17 @@ textarea {
     letter-spacing: 1px
 }
 
-.main-container {
+.projects-container {
     max-width: 120rem;
-    margin: auto;
+    margin:auto;
     width: 92%
 }
+.main-container {
+    max-width: 120rem;
+    margin: 12rem auto;
+    width: 92%
+}
+
 
 .btn {
    
