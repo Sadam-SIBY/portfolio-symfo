@@ -1,6 +1,4 @@
-/**
- * Module slid
- */
+
 const slider = {
     imagesElements: [],
   
@@ -38,20 +36,14 @@ const slider = {
   
         let isFirstPass = true;
   
-        // Boucle sur le tableau d'images à afficher
         for (const imgName of sliderImagesNames) {
-            // On crée une nouvelle balise img
-            const newImg = document.createElement('img'); // <img>
-            // On lui donne le chemin vers le fichier image
-            newImg.src = '/Job/siby/public/images/' + imgName; // <img src="img/...">
-            // On lui applique les classes qui vont bien
-            newImg.classList.add('slider__img'); // <img src="img/..." class="slider__img">
+            const newImg = document.createElement('img');
+            newImg.src = '/Job/siby/public/images/' + imgName;
+            newImg.classList.add('slider__img'); 
   
             if (isFirstPass === true) {
                 newImg.classList.add('slider__img--current');
             }
-  
-            // Insère l'élément newImg à la fin de notre élément slider
             slider.append(newImg);
             isFirstPass = false;
         }

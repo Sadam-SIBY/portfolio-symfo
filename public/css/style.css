@@ -120,11 +120,9 @@ textarea {
     margin-bottom: 3.5rem;
     position: relative;
     color: var(--primary-secondary);
-    /* color: #111 */
 }
 
 .heading-sec__main--lt {
-    /* color: #111; */
     color: var(--primary-secondary);
     font-weight: 800
 }
@@ -132,7 +130,6 @@ textarea {
 .heading-sec__main--lt::after {
     content: '';
     background: var(--primary-color);
-    /* background: #192a56 !important */
 
 }
 
@@ -183,14 +180,14 @@ textarea {
     letter-spacing: 1px
 }
 
-.projects-container {
-    max-width: 120rem;
-    margin:auto;
-    width: 92%
-}
 .main-container {
     max-width: 120rem;
-    margin: 12rem auto;
+    margin: 12rem auto 0;
+    width: 92%
+}
+.projects-container {
+    max-width: 120rem;
+    margin: 7rem auto 5rem;
     width: 92%
 }
 
@@ -249,7 +246,6 @@ textarea {
 }
 
 .text-primary {
-    /* color: #333; */
     color: var(--primary-secondary);
     font-size: 2.2rem;
     text-align: center;
@@ -269,7 +265,6 @@ textarea {
 
 .home-hero {
     color: #fff;
-    /* background: var(--primary-color); */
     background: linear-gradient(to right, rgba(39, 46, 243, 0.8), rgba(156, 156, 244, 0.8));
     background-position: center;
     height: 100vh;
@@ -493,7 +488,6 @@ textarea {
 
 .contact {
         background: var( --primary-tertiary);
-    /* background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)); */
     background-size: cover;
     background-position: center
 }
@@ -501,7 +495,6 @@ textarea {
 .contact__form-container {
     box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
     background: #192a56;
-    /* background: var(--primary-color); */
     padding: 4rem;
     margin-top: 6rem;
     max-width: 80rem;
@@ -544,7 +537,6 @@ textarea {
     border: 1px solid #ebebeb;
     font-size: 1.6rem;
     letter-spacing: 0px;
-    /* background: #f0f0f0; */
     background: var(--primary-color);
     border-radius: 5px;
     font-weight: 600
@@ -979,11 +971,19 @@ textarea {
 .fa-github {
     font-size: 4rem;
 }
+.fa-github:hover {
+    transform: translateY(-2px);
+}
 
 .fa-linkedin{
     font-size: 4rem;
     margin-right: 1rem;
 }
+
+.fa-linkedin:hover {
+    transform: translateY(-2px);
+}
+
 
 .main-footer__icon--mr-none {
     margin-right: 0
@@ -1081,7 +1081,6 @@ textarea {
 
   .slider__img {
     position: absolute;
-    /* top: 0; */
     left: 0;
     width: 100%;
     height: 100%;
@@ -1104,7 +1103,6 @@ textarea {
   }
 
   
-  /* slider nav */
   .slider__nav {
     position: absolute;
     display: flex;
@@ -1127,10 +1125,8 @@ textarea {
 
   .container {
     width: 100%;
-    /* width: 96%; */
     max-width: 100em;
     margin: 0 auto;
-    /* margin: 5rem auto; */
   }
 
   .content {
@@ -1166,7 +1162,6 @@ textarea {
     color: #fff;
   }
 
-/* ......... */
 @media only screen and (max-width: 56.25em) {
   
     .slider img{

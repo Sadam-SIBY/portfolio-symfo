@@ -6,10 +6,10 @@
 
     <section class="home-hero">
       <div class="home-hero__content">
-        <h1 class="heading-primary">Bonjour, je suis Sadam SIBY</h1>
+        <h1 class="heading-primary">Hello! je suis Sadam SIBY</h1>
         <div class="home-hero__info">
           <p class="text-primary">
-            Développeur <strong>Back-end</strong> spécialisé <strong>Symfony</strong>.
+            Développeur web <strong>Back-end</strong> spécialisé <strong>Symfony</strong>.
           </p>           
         </div>
         <div class="home-hero__cta">
@@ -32,18 +32,21 @@
             <h3 class="about__content-title">Me connaître plus</h3>
             <div class="about__content-details">
               <p class="about__content-details-para">
-                Issu d'une reconversion professionnelle, je progresse dans le <strong>developpement back-end </strong>spécialité <strong>Symfony</strong>.               
-                Je suis dans une démarche d'apprentissage constant pour apprendre de nouveaux languages et acquérir de la 
-                rigueur et de la méthode de travail.
+                "Étant issu d'une reconversion professionnelle, je progresse dans le développement web back-end, spécialisé en Symfony.
+                 Je suis engagé dans une démarche d'apprentissage constant afin de maîtriser de nouveaux langages et d'acquérir rigueur et
+                  méthode de travail. 
               </p>
               <p class="about__content-details-para">
-                Je suis ouvert aux opportunités d’emploi où je pourrais contribuer, apprendre et grandir.
-                Si vous pensez que je pourrais apporter un plus à vos besoins, alors n’hésitez pas à <strong>me contacter</strong>.
+                 Je suis ouvert aux opportunités d'emploi où je pourrais contribuer, apprendre et évoluer dans ma carrière.
+                  Si vous pensez que je pourrais apporter une valeur ajoutée à votre entreprise, n'hésitez pas à <strong>me contacter</strong>."
               </p>
          
             </div>
             <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
               >Me contacter</a
+            >
+            <a href="{{asset('docs/sadam-cv.pdf')}}" class="btn btn--med btn--theme dynamicBgClr"
+              >Consulter mon CV</a
             >
           </div>
           <div class="about__content-skills">
@@ -88,7 +91,7 @@
                 <div class="projects__row-content">
                     <h3 class="projects__row-content-title">Legaloa</h3>
                     <p class="projects__row-content-desc">
-                        Plateforme de recherche juridique permettant aux juristes de retrouver facilement n'importe quel article de Loi et de décisions de justice via un moteur de recherche par mot clé ("Projet en cours de réalisation...").
+                       Plateforme de recherche juridique permettant aux juristes de retrouver facilement n'importe quel article de loi et décision de justice via un moteur de recherche par mot-clé ("Projet en cours de réalisation...").
                     </p>
                     <a class='btn btn--med btn--theme dynamicBgClr' href='{{ path('project_legaloa')}}' target='_blank'> En savoir plus</a>
                 </div>
@@ -106,8 +109,8 @@
                 <div class="projects__row-content">
                     <h3 class="projects__row-content-title">O'Boulot</h3>
                     <p class="projects__row-content-desc">
-                        O'Boulot est un projet de type éducatif permettant à des enseignants de proposer des exercices et corrigés à des élèves de sa classe.
-                    Cette application a été pensés et réalisés en équipe dans le cadre de ma formation auprès de l'école O'Clock.
+                        O'Boulot est un projet éducatif permettant aux enseignants de proposer des exercices et corrigés à leurs élèves. 
+                        Cette application a été conçue et réalisée en équipe dans le cadre de ma formation à l'école O'Clock.
                     </p>
                     <a class='btn btn--med btn--theme dynamicBgClr' href='{{ path('project_oboulot')}}' target='_blank'> En savoir plus</a>
                 </div>
@@ -125,9 +128,9 @@
                 <div class="projects__row-content">
                     <h3 class="projects__row-content-title">AlloFlix</h3>
                     <p class="projects__row-content-desc">
-                         Site qui répertorie les nouveautés en termes de films et séries. Les films et séries sont classés par genre et permet 
-                    à l'utilisateur de rajouter les films et séries qui l'intéresse dans sa liste de favoris, de leur donner une note et 
-                    d'émettre également des critiques sur ces films et séries. Le site a été avec le framework Symfony.
+                         Site répertoriant les nouveautés en termes de films et séries. Les films et séries sont classés par genre, permettant
+                          à l'utilisateur d'ajouter ceux qui l'intéressent à sa liste de favoris, de leur attribuer une note et de publier des
+                          critiques. Le site a été développé avec le framework Symfony.
                     </p>
                     <a class='btn btn--med btn--theme dynamicBgClr' href='{{ path('project_allo_flix')}}' target='_blank'> En savoir plus</a>
                 </div>
@@ -145,9 +148,9 @@
                 <div class="projects__row-content">
                     <h3 class="projects__row-content-title">Trip Odvisor</h3>
                     <p class="projects__row-content-desc">
-                         Projet de conseils touristiques pour aider les gens à organiser leurs voyages (des avis, des guides, des bons plans sur 
-                    les destinations les plus recherchées, les restaurants les plus fins, les hôtels les plus luxueux, etc.)
-                    Projet réalisé dans le cadre de la formation chez O'Clock.
+                         Projet de conseils touristiques visant à aider les gens à organiser leurs voyages en fournissant des avis,
+                          des guides et des bons plans sur les destinations les plus recherchées, ainsi que sur les restaurants les 
+                          plus fins et les hôtels les plus luxueux, etc. Ce projet a été réalisé dans le cadre de ma formation chez O'Clock.
                     </p>
                     <a class='btn btn--med btn--theme dynamicBgClr' href='{{ path('project_tripodvisor')}}' target='_blank'> En savoir plus</a>
                 </div>
@@ -166,8 +169,8 @@
                 <div class="projects__row-content">
                     <h3 class="projects__row-content-title">O'Shop</h3>
                     <p class="projects__row-content-desc">
-                        Site e-commerce,  en l'occurence une boutique en ligne de chaussures.
-                    Le site a été développé en respectant la methode agile Scrum (développement itératif par Sprints).
+                        Site e-commerce, en l'occurrence une boutique en ligne de chaussures. Le développement du site a suivi la
+                         méthodologie agile Scrum, basée sur un développement itératif par Sprints.
                     </p>
                     <a class='btn btn--med btn--theme dynamicBgClr' href='{{ path('project_oshop')}}' target='_blank'>En savoir plus</a>
                 </div>
