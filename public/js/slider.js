@@ -38,7 +38,7 @@ const slider = {
   
         for (const imgName of sliderImagesNames) {
             const newImg = document.createElement('img');
-            newImg.src = '/Job/siby/public/images/' + imgName;
+            newImg.src = '/Job/portfolio/public/images/' + imgName;
             newImg.classList.add('slider__img'); 
   
             if (isFirstPass === true) {
